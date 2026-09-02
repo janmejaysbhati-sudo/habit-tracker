@@ -34,6 +34,7 @@ export type Database = {
           longest_streak?: number;
           created_at?: string;
         };
+        Relationships: [];
       };
       habit_logs: {
         Row: {
@@ -54,8 +55,13 @@ export type Database = {
           date?: string;
           completed?: boolean;
         };
+        Relationships: [];
       };
     };
+    Views: Record<string, never>;
+    Functions: Record<string, never>;
+    Enums: Record<string, never>;
+    CompositeTypes: Record<string, never>;
   };
 };
 
